@@ -1,0 +1,12 @@
+@import "src/assets/vars";
+@import "src/assets/mixins";
+
+.search {
+  &:hover {
+    svg {
+      path {
+        fill: $label;
+      }
+    }
+  }
+}

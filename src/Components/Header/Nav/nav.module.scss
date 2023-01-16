@@ -1,0 +1,23 @@
+@import "src/assets/vars";
+@import "src/assets/mixins";
+
+.list {
+  display: flex;
+  align-items: center;
+}
+
+.item {
+  &:not(:last-child) {
+    margin-right: 48px;
+  }
+}
+
+.link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: $text-main;
+  &:hover {
+    border-bottom: 4px solid $label;
+  }
+}

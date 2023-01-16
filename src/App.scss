@@ -1,0 +1,78 @@
+@import "node_modules/normalize.css/normalize";
+@import "assets/_vars.scss";
+@import "assets/_mixins.scss";
+
+@font-face {
+  font-family: 'dmsans';
+  src: local("dmsans-regular"),
+  url("assets/fonts/dmsans-regular.woff2") format("woff2"),
+  url("assets/fonts/dmsans-regular.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'dmsans';
+  src: local("dmsans-medium"),
+  url("assets/fonts/dmsans-medium.woff2") format("woff2"),
+  url("assets/fonts/dmsans-medium.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'dmsans';
+  src: local("dmsans-bold"),
+  url("assets/fonts/dmsans-bold.woff2") format("woff2"),
+  url("assets/fonts/dmsans-bold.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+}
+
+body {
+  font-family: 'dmsans', sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+*:focus, *:focus-visible {
+  outline: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img, video {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  @extend %btn-reset;
+}
+
+ul {
+  @extend %list-reset;
+}

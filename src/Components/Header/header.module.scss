@@ -1,0 +1,15 @@
+@import "src/assets/vars";
+@import "src/assets/mixins";
+
+.header {
+  position: relative;
+  z-index: 1;
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 28px;
+}
