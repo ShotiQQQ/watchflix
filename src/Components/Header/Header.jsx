@@ -5,8 +5,11 @@ import Logo from "./Logo/Logo";
 import Nav from "./Nav/Nav";
 import Search from "./Search/Search";
 import User from "./User/User";
+import {usePopularFilms} from "../../utils/hooks/usePopularFilms";
 
 const Header = () => {
+  const topFilms = usePopularFilms();
+  console.log(topFilms)
   return (
     <header className={s.header}>
       <Container>
